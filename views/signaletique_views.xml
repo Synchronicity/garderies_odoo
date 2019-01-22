@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--VUE LISTING SUR LA PAGE D'ACCUEIL-->
+        <record id="view_tree_signaletique" model="ir.ui.view">
+            <field name="name">signaletique.tree</field>
+            <field name="model">garderies.signaletique</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="prenom"/>
+                    <field name="adresse"/>
+                    <field name="cp" widget="char"/>
+                    <field name="localite"/>
+                    <field name="tel"/>
+                    <field name="email"/>
+                    <field name="candidat"/>
+                    <field name="titre"/>
+                    <field name="date_in"/>
+                    <field name="horaire_id" widget="many2many_tags"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--VUES FORMULAIRE-->
+        <record id="view_form_signaletique" model="ir.ui.view">
+            <field name="name">signaletique.form</field>
+            <field name="model">garderies.signaletique</field>
+            <field name="arch" type="xml">
+                <form>
+                    <!--sheet: can be used as a direct child to form for a narrower and more responsive form layout-->
+                    <sheet>
+                        <!--notebook: defines a tabbed section. Each tab (onglet) is defined through a page child element.-->
+                        <notebook>
+                            <!--ONGLET (tab) SIGNALETIQUE-->
+                            <page string="Signalétique">
+                                <!--group: used to define column layouts in forms.-->
+                                <group name="group_top">
+                                    <!--COLONNE DE GAUCHE-->
+                                    <group name="signal_left">
+                                        <field name="name"/>
+                                        <field name="prenom"/>
+                                        <field name="adresse"/>
+                                        <field name="cp" widget="char"/>
+                                        <field name="localite"/>
+                                        <field name="nationalite"/>
+                                        <field name="nn"/>
+                                        <field name="sexe"/>
+                                        <field name="tel"/>
+                                        <field name="email"/>
+                                    </group>
+                                    <!--COLONNE DE DROITE-->
+                                    <group name="signal_right">
+                                        <field name="candidat" type="checkbox"/>
+                                        <field name="titre"/>
+                                        <field name="matricule"/>
+                                        <field name="date_in"/>
+                                        <field name="rem"/>
+                                    </group>
+
+                                </group>
+                            </page>
+
+                            <!--ONGLET HORAIRES ACCEPTES-->
+                            <page string="Horaires acceptés">
+                                <group name="group_top">
+                                    <field name="horaire_id" widget="many2many_tags"/>
+                                </group>
+                            </page>
+
+                            <!--ONGLET PRESTATIONS-->
+                            <page string="Prestations">
+                                <group name="group_top">
+                                    <field name="prestation_ids">
+                                        <tree>
+                                            <field name="debut"/>
+                                            <field name="fin"/>
+                                            <field name="horaire_id"/>
+                                            <field name="implant_id"/>
+                                            <field name="absence_motif"/>
+                                            <field name="remplace_agent"/>
+                                        </tree>
+                                        <form>
+                                            <group>
+                                                <field name="debut"/>
+                                                <field name="fin"/>
+                                                <field name="horaire_id"/>
+                                                <field name="implant_id"/>
+                                                <field name="absence_motif"/>
+                                                <field name="remplace_agent"/>
+                                            </group>
+                                        </form>
+                                    </field>
+                                </group>
+                            </page>
+
+                            <!--ONGLET CONGES-->
+                            <page string="Congés">
+                                <group name="group_top">
+                                    <field name="conge_ids">
+                                        <tree>
+                                            <field name="debut"/>
+                                            <field name="fin"/>
+                                            <field name="type"/>
+                                        </tree>
+                                        <!--<form>
+                                            <group>
+                                                <field name="debut"/>
+                                                <field name="fin"/>
+                                                <field name="type"/>
+                                            </group>
+                                        </form>-->
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

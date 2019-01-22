@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<openerp>
+    <record id="view_tree_horaire" model="ir.ui.view">
+        <field name="name">Horaire tree</field>
+        <field name="model">garderies.horaire</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="debut" widget="float_time"/>
+                <field name="fin" widget="float_time"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_horaire" model="ir.ui.view">
+        <field name="name">Horaire form</field>
+        <field name="model">garderies.horaire</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group name="group_top">
+                        <field name="name"/>
+                        <field name="debut" widget="float_time"/>
+                        <field name="fin" widget="float_time"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</openerp>

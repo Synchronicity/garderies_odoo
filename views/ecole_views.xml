@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_tree_ecole" model="ir.ui.view">
+            <field name="name">Ecole tree</field>
+            <field name="model">garderies.ecole</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="adresse"/>
+                    <field name="cp_loc"/>
+                    <field name="tel"/>
+                    <field name="titre"/>
+                    <field name="nom_dir"/>
+                    <field name="num_bat"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_form_ecole" model="ir.ui.view">
+            <field name="name">Ecole form</field>
+            <field name="model">garderies.ecole</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group name="group_top">
+                            <field name="name"/>
+                            <field name="adresse"/>
+                            <field name="cp_loc"/>
+                            <field name="tel"/>
+                            <field name="titre"/>
+                            <field name="nom_dir"/>
+                            <field name="num_bat"/>
+                            <!-- La class empêche l'ajout d'une implantation depuis le formulaire école -->
+                            <field name="implantation_ids" class="oe_read_only"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

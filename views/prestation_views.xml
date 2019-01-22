@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_tree_prestation" model="ir.ui.view">
+            <field name="name">prestation.tree</field>
+            <field name="model">garderies.prestation</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="debut"/>
+                    <field name="fin"/>
+                    <field name="horaire_id"/>
+                    <field name="implant_id"/>
+                    <field name="absence_motif"/>
+                    <field name="remplace_agent"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_form_prestation" model="ir.ui.view">
+            <field name="name">prestation.form</field>
+            <field name="model">garderies.prestation</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group name="group_top">
+                            <group name="presta_left">
+                                <field name="name"/>
+                                <field name="debut"/>
+                                <field name="fin"/>
+                                <field name="horaire_id_domain" invisible="1"/>
+                                <field name="horaire_id" domain="horaire_id_domain" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                                <field name="implant_id"/>
+                            </group>
+                            <group name="presta_right">
+                                <field name="absence_debut"/>
+                                <field name="absence_fin"/>
+                                <field name="absence_motif"/>
+                                <field name="empty_line" readonly="1"/>
+                                <field name="remplace_agent"/>
+                                <field name="remplace_motif"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

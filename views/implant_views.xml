@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_tree_implantation" model="ir.ui.view">
+            <field name="name">Implantation tree</field>
+            <field name="model">garderies.implantation</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="adresse"/>
+                    <field name="cp_loc"/>
+                    <field name="tel"/>
+                    <field name="ecole_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_form_implantation" model="ir.ui.view">
+            <field name="name">Implantation form</field>
+            <field name="model">garderies.implantation</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group name="group_top">
+                            <field name="name"/>
+                            <field name="adresse"/>
+                            <field name="cp_loc"/>
+                            <field name="tel"/>
+                            <field name="ecole_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

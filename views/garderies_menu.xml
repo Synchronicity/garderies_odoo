@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <act_window id="action_garderies_signaletique"
+                    name="Liste des agents"
+                    res_model="garderies.signaletique"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_garderies_nationalite"
+                    name="Gestion des nationalités"
+                    res_model="garderies.nationalite"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_garderies_horaire"
+                    name="Gestion des horaires"
+                    res_model="garderies.horaire"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_garderies_ecole"
+                    name="Liste des établissements"
+                    res_model="garderies.ecole"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_garderies_implantation"
+                    name="Liste des implantations"
+                    res_model="garderies.implantation"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_garderies_prestation"
+                    name="Liste des prestations"
+                    res_model="garderies.prestation"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_garderies_conge"
+                    name="Liste des congés"
+                    res_model="garderies.conge"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_garderies_ferie"
+                    name="Liste des jours féries"
+                    res_model="garderies.ferie"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_garderies_nationalite"
+                    name="Liste des nationalités"
+                    res_model="garderies.nationalite"
+                    view_mode="tree,form"/>
+
+        <!-- MENUS BARRE SUPERIEURE -->
+        <menuitem id="menu_garderies"
+                  name="Garderies"
+                  sequence="3"/>
+
+        <menuitem id="menu_vacances"
+                  name="Vacances"
+                  sequence="5"/>
+
+        <menuitem id="menu_modeles"
+                  name="Modèles"
+                  sequence="7"/>
+
+        <!-- MENUS COLONNE DE GAUCHE - GARDERIES -->
+        <menuitem id="menu_garderies_signaletique"
+                  name="Signalétiques"
+                  action="action_garderies_signaletique"
+                  parent="menu_garderies"
+                  sequence="10"/>
+
+        <menuitem id="menu_garderies_ecole"
+                  name="Ecoles"
+                  action="action_garderies_ecole"
+                  parent="menu_garderies"
+                  sequence="15"/>
+
+        <menuitem id="menu_garderies_implantation"
+                  name="Implantations"
+                  action="action_garderies_implantation"
+                  parent="menu_garderies"
+                  sequence="20"/>
+
+        <menuitem id="menu_garderies_prestation"
+                  name="Prestations"
+                  action="action_garderies_prestation"
+                  parent="menu_garderies"
+                  sequence="25"/>
+
+        <menuitem id="menu_garderies_horaire"
+                  name="Horaires"
+                  action="action_garderies_horaire"
+                  parent="menu_garderies"
+                  sequence="30"/>
+
+        <menuitem id="menu_garderies_conge"
+                  name="Congés"
+                  action="action_garderies_conge"
+                  parent="menu_garderies"
+                  sequence="35"/>
+
+        <menuitem id="menu_garderies_ferie"
+                  name="Fériés"
+                  action="action_garderies_ferie"
+                  parent="menu_garderies"
+                  sequence="40"/>
+
+        <menuitem id="menu_garderies_nationalite"
+                  name="Nationalités"
+                  action="action_garderies_nationalite"
+                  parent="menu_garderies"
+                  sequence="45"/>
+    </data>
+</openerp>
