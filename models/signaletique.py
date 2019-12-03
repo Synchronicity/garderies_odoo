@@ -31,7 +31,7 @@ class Signaletique(models.Model):
                              'Titre')
     matricule = fields.Integer(string="Matricule ULIS")
     date_in = fields.Date(string="Date d'entrée")
-    rem = fields.Char(string='Remarques')
+    rem = fields.Text(string='Remarques & notes')
 
     # CHOIX DE LA NATIONALITE
     nationalite = fields.Many2one(comodel_name='garderies.nationalite',

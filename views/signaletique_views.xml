@@ -30,7 +30,7 @@
                 <form>
                     <!--sheet: can be used as a direct child to form for a narrower and more responsive form layout-->
                     <sheet>
-                        <!--notebook: defines a tabbed section. Each tab (onglet) is defined through a page child element.-->
+                  <!--notebook: defines a tabbed section. Each tab (onglet) is defined through a page child element-->
                         <notebook>
                             <!--ONGLET (tab) SIGNALETIQUE-->
                             <page string="Signalétique">

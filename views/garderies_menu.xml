@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+        <!-- ACTIONS LIEES AUX GARDERIES -->
         <act_window id="action_garderies_signaletique"
                     name="Liste des agents"
                     res_model="garderies.signaletique"
-                    view_mode="tree,form"/>
-
-        <act_window id="action_garderies_nationalite"
-                    name="Gestion des nationalités"
-                    res_model="garderies.nationalite"
-                    view_mode="tree,form"/>
-
-        <act_window id="action_garderies_horaire"
-                    name="Gestion des horaires"
-                    res_model="garderies.horaire"
                     view_mode="tree,form"/>
 
         <act_window id="action_garderies_ecole"
@@ -31,6 +22,11 @@
                     res_model="garderies.prestation"
                     view_mode="tree,form"/>
 
+        <act_window id="action_garderies_horaire"
+                    name="Gestion des horaires"
+                    res_model="garderies.horaire"
+                    view_mode="tree,form"/>
+
         <act_window id="action_garderies_conge"
                     name="Liste des congés"
                     res_model="garderies.conge"
@@ -46,6 +42,14 @@
                     res_model="garderies.nationalite"
                     view_mode="tree,form"/>
 
+
+        <!-- ACTIONS LIEES AUX VACANCES -->
+<!--        <act_window id="action_vacances_calendrier"
+                    name="Liste des vacances de l'année scolaire en cours"
+                    res_model="vacances.calendrier"
+                    view_mode="tree,form"/>-->
+
+
         <!-- MENUS BARRE SUPERIEURE -->
         <menuitem id="menu_garderies"
                   name="Garderies"
@@ -58,6 +62,7 @@
         <menuitem id="menu_modeles"
                   name="Modèles"
                   sequence="7"/>
+
 
         <!-- MENUS COLONNE DE GAUCHE - GARDERIES -->
         <menuitem id="menu_garderies_signaletique"
@@ -107,5 +112,13 @@
                   action="action_garderies_nationalite"
                   parent="menu_garderies"
                   sequence="45"/>
+
+
+        <!-- MENUS COLONNE DE GAUCHE - VACANCES -->
+        <menuitem id="menu_vacances_signaletique"
+                  name="Signalétiques"
+                  action="action_garderies_signaletique"
+                  parent="menu_vacances"
+                  sequence="12"/>
     </data>
 </openerp>

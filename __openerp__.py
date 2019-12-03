@@ -4,15 +4,15 @@
 
     'summary': """
         Instruction Publique
-        Test attributions Garderies""",
+        Test/Tuto attributions Garderies""",
 
     'description': """
-        Test de gestion des signalétiques des gardiennes, des établissements scolaires et des différents éléments
-        nécessaires à l'attribution de prestations en vue du remplacement du vieux programme écrit en VBA.
+        Test/Tuto de gestion des signalétiques des gardiennes, des établissements scolaires et des différents
+        éléments nécessaires à l'attribution de prestations en vue du remplacement du programme actuel écrit en VBA.
     """,
 
     'author': "JLS_181127",
-    'website': "http://192.168.56.101:8069",
+    'website': "http://192.168.56.102:8069",
     'application': True,
 
     # Categories can be used to filter modules in modules listing
