@@ -2,9 +2,9 @@
 <openerp>
     <data>
         <!--VUE LISTING SUR LA PAGE D'ACCUEIL-->
-        <record id="view_tree_signaletique" model="ir.ui.view">
-            <field name="name">signaletique.tree</field>
-            <field name="model">garderies.signaletique</field>
+        <record id="view_tree_modeles_signaletique" model="ir.ui.view">
+            <field name="name">modeles.signaletique.tree</field>
+            <field name="model">modeles.signaletique</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -14,7 +14,6 @@
                     <field name="localite"/>
                     <field name="tel"/>
                     <field name="email"/>
-                    <field name="candidat"/>
                     <field name="titre"/>
                     <field name="date_in"/>
                     <field name="horaire_id" widget="many2many_tags"/>
@@ -23,9 +22,9 @@
         </record>
 
         <!--VUES FORMULAIRE-->
-        <record id="view_form_signaletique" model="ir.ui.view">
-            <field name="name">signaletique.form</field>
-            <field name="model">garderies.signaletique</field>
+        <record id="view_form_modeles_signaletique" model="ir.ui.view">
+            <field name="name">modeles.signaletique.form</field>
+            <field name="model">modeles.signaletique</field>
             <field name="arch" type="xml">
                 <form>
                     <!--sheet: can be used as a direct child to form for a narrower and more responsive form layout-->
@@ -51,7 +50,6 @@
                                     </group>
                                     <!--COLONNE DE DROITE-->
                                     <group name="signal_right">
-                                        <field name="candidat" type="checkbox"/>
                                         <field name="titre"/>
                                         <field name="matricule"/>
                                         <field name="date_in"/>
@@ -60,8 +58,8 @@
                                 </group>
                             </page>
 
-                            <!--ONGLET HORAIRES ACCEPTES-->
-                            <page string="Horaires acceptés">
+                            <!--ONGLET HORAIRES-->
+                            <page string="Horaires">
                                 <group name="group_top">
                                     <field name="horaire_id" widget="many2many_tags"/>
                                 </group>
@@ -102,13 +100,6 @@
                                             <field name="fin"/>
                                             <field name="type"/>
                                         </tree>
-                                        <!--<form>
-                                            <group>
-                                                <field name="debut"/>
-                                                <field name="fin"/>
-                                                <field name="type"/>
-                                            </group>
-                                        </form>-->
                                     </field>
                                 </group>
                             </page>

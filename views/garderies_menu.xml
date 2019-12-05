@@ -44,10 +44,22 @@
 
 
         <!-- ACTIONS LIEES AUX VACANCES -->
-<!--        <act_window id="action_vacances_calendrier"
+        <act_window id="action_vacances_signaletique"
+                    name="Liste des agents"
+                    res_model="garderies.signaletique"
+                    view_mode="tree,form"/>
+
+        <act_window id="action_vacances_calendrier"
                     name="Liste des vacances de l'année scolaire en cours"
                     res_model="vacances.calendrier"
-                    view_mode="tree,form"/>-->
+                    view_mode="tree,form"/>
+
+
+        <!-- ACTIONS LIEES AUX MODELES -->
+        <act_window id="action_modeles_signaletique"
+                    name="Liste des modèles de l'Académie"
+                    res_model="modeles.signaletique"
+                    view_mode="tree,form"/>
 
 
         <!-- MENUS BARRE SUPERIEURE -->
@@ -116,9 +128,23 @@
 
         <!-- MENUS COLONNE DE GAUCHE - VACANCES -->
         <menuitem id="menu_vacances_signaletique"
-                  name="Signalétiques"
-                  action="action_garderies_signaletique"
+                  name="Signalétique"
+                  action="action_vacances_signaletique"
                   parent="menu_vacances"
                   sequence="12"/>
+
+        <menuitem id="menu_vacances_calendrier"
+                  name="Calendirer"
+                  action="action_vacances_calendrier"
+                  parent="menu_vacances"
+                  sequence="17"/>
+
+
+        <!-- MENUS COLONNE DE GAUCHE - MODELES -->
+        <menuitem id="menu_modeles_signaletique"
+                  name="Signalétique"
+                  action="action_modeles_signaletique"
+                  parent="menu_modeles"
+                  sequence="22"/>
     </data>
 </openerp>

@@ -1,3 +1,12 @@
 .typefdmt_column_width [data-id="typefondement"]{width: 2000px;}
 .typemesuresec_column_width [data-id="type_mesure_sec"]{width: 200px;}
 .conservation_column_width [data-id="conservation"]{width: 250px;}
+
+/* Code & inherit doesn't work ' */
+.field_text .notes_width {
+    position: fixed;
+    width: 232px;
+    max-width: 350px !important;
+    height:134px;
+    max-height: 350px !important;
+}

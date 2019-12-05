@@ -2,11 +2,11 @@
 <openerp>
     <data>
         <!-- Adds all assets in Odoo -->
-        <template id="assets_backend" name="static_resources_demo assets" inherit_id="web.assets_backend">
+<!--        <template id="assets_backend" name="static_resources_demo assets" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
-                <!-- All links to CSS and JS files should be added in here. -->
-                <link rel="stylesheet" href="/reg_trt/static/src/css/mycss.css"/>
+                &lt;!&ndash; All links to CSS and JS files should be added in here. &ndash;&gt;
+                <link rel="stylesheet" href="/garderies_Odoo/static/src/css/mycss.css"/>
             </xpath>
-        </template>
+        </template>-->
     </data>
 </openerp>
