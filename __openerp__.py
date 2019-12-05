@@ -27,11 +27,11 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
+        'views/menu_garderies.xml',
         'views/signaletique_views.xml',
         'views/horaire_views.xml',
         'views/ecole_views.xml',
         'views/implant_views.xml',
-        'views/garderies_menu.xml',
         'views/prestation_views.xml',
         'views/conge_views.xml',
         'views/ferie_views.xml',

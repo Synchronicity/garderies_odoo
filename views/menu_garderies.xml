@@ -61,6 +61,11 @@
                     res_model="modeles.signaletique"
                     view_mode="tree,form"/>
 
+        <act_window id="action_modeles_horaire"
+                    name="Nombres d'heures par semaine"
+                    res_model="modeles.horaire"
+                    view_mode="tree, form"/>
+
 
         <!-- MENUS BARRE SUPERIEURE -->
         <menuitem id="menu_garderies"
@@ -134,7 +139,7 @@
                   sequence="12"/>
 
         <menuitem id="menu_vacances_calendrier"
-                  name="Calendirer"
+                  name="Calendrier"
                   action="action_vacances_calendrier"
                   parent="menu_vacances"
                   sequence="17"/>
@@ -146,5 +151,11 @@
                   action="action_modeles_signaletique"
                   parent="menu_modeles"
                   sequence="22"/>
+
+        <menuitem id="menu_modeles_horaire"
+                  name="Horaire"
+                  action="action_modeles_horaire"
+                  parent="menu_modeles"
+                  sequence="27"/>
     </data>
 </openerp>
