@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<openerp>
+    <record id="view_tree_vacances_calendrier" model="ir.ui.view">
+        <field name="name">_vacances.calendrier.tree</field>
+        <field name="model">vacances.calendrier</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="debut_vacances"/>
+                <field name="fin_vacances"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_vacances_calendrier" model="ir.ui.view">
+        <field name="name">vacances.calendrier.form</field>
+        <field name="model">vacances.calendrier</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group name="group_top">
+                        <field name="name"/>
+                        <field name="debut_vacances"/>
+                        <field name="fin_vacances"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</openerp>

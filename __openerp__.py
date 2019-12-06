@@ -36,6 +36,7 @@
         'views/conge_views.xml',
         'views/ferie_views.xml',
         'views/templates.xml',
+        'views/vacances_calendrier_views.xml',
         'views/modeles_signaletique_views.xml',
         'views/modeles_horaire_views.xml',
     ],

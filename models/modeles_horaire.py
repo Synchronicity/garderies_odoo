@@ -10,8 +10,10 @@ class ModelesHoraire(models.Model):
     name = fields.Char(string='Horaire',
                        required=True)
     nbrHeuresJour = fields.Float(string="Nombre d'heures")
-    totalHeuresHebdo = fields.Float(string="Total hebdomadaire")
+    totalHeuresHebdo = fields.Float(compute="_compute_totalHeuresHebdo", string="Total hebdomadaire")
 
-    # def _totalHeuresHebdo(self):
-    #     for hours in self:
-    #         ModelesHoraire.totalHeuresHebdo += hours.nbrHeuresJour
+    @api.multi
+    @api.depends('nbrHeuresJour')
+    def _compute_totalHeuresHebdo(self):
+        for record in self:
+            record.totalHeuresHebdo += record.nbrHeuresJour

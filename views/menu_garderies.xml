@@ -50,7 +50,7 @@
                     view_mode="tree,form"/>
 
         <act_window id="action_vacances_calendrier"
-                    name="Liste des vacances de l'année scolaire en cours"
+                    name="Vacances &amp; jours fériés de l'année scolaire en cours"
                     res_model="vacances.calendrier"
                     view_mode="tree,form"/>
 
@@ -139,7 +139,7 @@
                   sequence="12"/>
 
         <menuitem id="menu_vacances_calendrier"
-                  name="Calendrier"
+                  name="Congés"
                   action="action_vacances_calendrier"
                   parent="menu_vacances"
                   sequence="17"/>
