@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <openerp>
     <record id="view_tree_modeles_horaire" model="ir.ui.view">
-        <field name="name">Horaire tree</field>
+        <field name="name">modeles.horaire.tree</field>
         <field name="model">modeles.horaire</field>
         <field name="arch" type="xml">
             <tree>
@@ -13,7 +13,7 @@
     </record>
 
     <record id="view_form_modeles_horaire" model="ir.ui.view">
-        <field name="name">Horaire form</field>
+        <field name="name">modeles.horaire.form</field>
         <field name="model">modeles.horaire</field>
         <field name="arch" type="xml">
             <form>
@@ -21,6 +21,7 @@
                     <group name="group_top">
                         <field name="name"/>
                         <field name="nbrHeuresJour" widget="float_time"/>
+                        <field name="totalHeuresHebdo"/>
                     </group>
                 </sheet>
             </form>

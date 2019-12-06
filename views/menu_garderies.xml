@@ -64,7 +64,7 @@
         <act_window id="action_modeles_horaire"
                     name="Nombres d'heures par semaine"
                     res_model="modeles.horaire"
-                    view_mode="tree, form"/>
+                    view_mode="tree,form"/>
 
 
         <!-- MENUS BARRE SUPERIEURE -->

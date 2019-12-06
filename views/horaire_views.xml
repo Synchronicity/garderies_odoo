@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <openerp>
     <record id="view_tree_horaire" model="ir.ui.view">
-        <field name="name">Horaire tree</field>
+        <field name="name">horaire.tree</field>
         <field name="model">garderies.horaire</field>
         <field name="arch" type="xml">
             <tree>
