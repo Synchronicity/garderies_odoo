@@ -33,7 +33,7 @@ class ModelesSignaletique(models.Model):
     nationalite = fields.Many2one(comodel_name='garderies.nationalite',
                                   string='Nationalité')
     # DESIGNATION DE L'HORAIRE
-    horaire_id = fields.Many2many(comodel_name='modeles.horaire',
+    horaire_ids = fields.Many2many(comodel_name='modeles.horaire', inverse_name='horaire_id',
                                   string='Horaire')
     # LISTE DES CONGÉS
     conge_ids = fields.One2many(comodel_name='garderies.conge', inverse_name='conge_id',
