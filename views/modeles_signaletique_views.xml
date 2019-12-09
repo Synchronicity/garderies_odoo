@@ -62,7 +62,7 @@
                             <page string="Horaires">
                                 <group name="group_top">
                                     <field name="horaire_ids" widget="many2many_tags"/>
-                                    <field name="totalHeuresHebdo"/>
+<!--                                    <field name="totalHeuresHebdo"/>-->
                                 </group>
                             </page>
 
