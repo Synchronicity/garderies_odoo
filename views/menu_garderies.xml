@@ -68,6 +68,7 @@
 
 
         <!-- MENUS BARRE SUPERIEURE -->
+        <!-- Ajout du menu spécifique à l'appli AES "extraschool" -->
         <menuitem name="Extraschool"
                   id="menu_extraschool"
                   sequence="0"/>

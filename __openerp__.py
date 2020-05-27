@@ -21,7 +21,7 @@
     'category': 'Instruction Publique',
     'version': '0.2',
 
-    # any module necessary for this one to work correctly
+    # Dépendance de l'appli AES "extraschool"
     'depends': ['web_domain_field', 'extraschool'],
 
     # always loaded
