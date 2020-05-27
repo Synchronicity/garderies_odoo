@@ -68,17 +68,21 @@
 
 
         <!-- MENUS BARRE SUPERIEURE -->
+        <menuitem name="Extraschool"
+                  id="menu_extraschool"
+                  sequence="0"/>
+
         <menuitem id="menu_garderies"
                   name="Garderies"
-                  sequence="3"/>
+                  sequence="93"/>
 
         <menuitem id="menu_vacances"
                   name="Vacances"
-                  sequence="5"/>
+                  sequence="95"/>
 
         <menuitem id="menu_modeles"
                   name="Modèles"
-                  sequence="7"/>
+                  sequence="97"/>
 
 
         <!-- MENUS COLONNE DE GAUCHE - GARDERIES -->
@@ -86,49 +90,49 @@
                   name="Signalétiques"
                   action="action_garderies_signaletique"
                   parent="menu_garderies"
-                  sequence="10"/>
+                  sequence="110"/>
 
         <menuitem id="menu_garderies_ecole"
                   name="Ecoles"
                   action="action_garderies_ecole"
                   parent="menu_garderies"
-                  sequence="15"/>
+                  sequence="115"/>
 
         <menuitem id="menu_garderies_implantation"
                   name="Implantations"
                   action="action_garderies_implantation"
                   parent="menu_garderies"
-                  sequence="20"/>
+                  sequence="120"/>
 
         <menuitem id="menu_garderies_prestation"
                   name="Prestations"
                   action="action_garderies_prestation"
                   parent="menu_garderies"
-                  sequence="25"/>
+                  sequence="125"/>
 
         <menuitem id="menu_garderies_horaire"
                   name="Horaires"
                   action="action_garderies_horaire"
                   parent="menu_garderies"
-                  sequence="30"/>
+                  sequence="130"/>
 
         <menuitem id="menu_garderies_conge"
                   name="Congés"
                   action="action_garderies_conge"
                   parent="menu_garderies"
-                  sequence="35"/>
+                  sequence="135"/>
 
         <menuitem id="menu_garderies_ferie"
                   name="Fériés"
                   action="action_garderies_ferie"
                   parent="menu_garderies"
-                  sequence="40"/>
+                  sequence="140"/>
 
         <menuitem id="menu_garderies_nationalite"
                   name="Nationalités"
                   action="action_garderies_nationalite"
                   parent="menu_garderies"
-                  sequence="45"/>
+                  sequence="145"/>
 
 
         <!-- MENUS COLONNE DE GAUCHE - VACANCES -->
@@ -136,13 +140,13 @@
                   name="Signalétique"
                   action="action_vacances_signaletique"
                   parent="menu_vacances"
-                  sequence="12"/>
+                  sequence="112"/>
 
         <menuitem id="menu_vacances_calendrier"
                   name="Congés"
                   action="action_vacances_calendrier"
                   parent="menu_vacances"
-                  sequence="17"/>
+                  sequence="117"/>
 
 
         <!-- MENUS COLONNE DE GAUCHE - MODELES -->
@@ -150,12 +154,12 @@
                   name="Signalétique"
                   action="action_modeles_signaletique"
                   parent="menu_modeles"
-                  sequence="22"/>
+                  sequence="122"/>
 
         <menuitem id="menu_modeles_horaire"
                   name="Horaire"
                   action="action_modeles_horaire"
                   parent="menu_modeles"
-                  sequence="27"/>
+                  sequence="127"/>
     </data>
 </openerp>

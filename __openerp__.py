@@ -22,7 +22,7 @@
     'version': '0.2',
 
     # any module necessary for this one to work correctly
-    'depends': ['web_domain_field'],
+    'depends': ['web_domain_field', 'extraschool'],
 
     # always loaded
     'data': [

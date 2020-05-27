@@ -3,11 +3,12 @@ from openerp import models, fields, api
 
 
 class Ecole(models.Model):
+    _inherit = 'extraschool.school'
     _name = 'garderies.ecole'
-    _order = 'name'
+    # _order = 'name'
 
-    name = fields.Char(string='Ecole',
-                       required=True)
+    # name = fields.Char(string='Ecole',
+    #                   required=True)
     adresse = fields.Char(string='Adresse',
                           required=True)
     cp_loc = fields.Char(string="CP & Loc",
