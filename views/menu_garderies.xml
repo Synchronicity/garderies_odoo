@@ -81,9 +81,10 @@
                   name="Vacances"
                   sequence="95"/>
 
-        <menuitem id="menu_modeles"
-                  name="Modèles"
-                  sequence="97"/>
+        <!-- (Non gere dans GAMO) -->
+<!--        <menuitem id="menu_modeles"-->
+<!--                  name="Modèles"-->
+<!--                  sequence="97"/>-->
 
 
         <!-- MENUS COLONNE DE GAUCHE - GARDERIES -->
@@ -150,17 +151,17 @@
                   sequence="117"/>
 
 
-        <!-- MENUS COLONNE DE GAUCHE - MODELES -->
-        <menuitem id="menu_modeles_signaletique"
-                  name="Signalétique"
-                  action="action_modeles_signaletique"
-                  parent="menu_modeles"
-                  sequence="122"/>
+        <!-- MENUS COLONNE DE GAUCHE - MODELES (Non gere dans GAMO) -->
+<!--        <menuitem id="menu_modeles_signaletique"-->
+<!--                  name="Signalétique"-->
+<!--                  action="action_modeles_signaletique"-->
+<!--                  parent="menu_modeles"-->
+<!--                  sequence="122"/>-->
 
-        <menuitem id="menu_modeles_horaire"
-                  name="Horaire"
-                  action="action_modeles_horaire"
-                  parent="menu_modeles"
-                  sequence="127"/>
+<!--        <menuitem id="menu_modeles_horaire"-->
+<!--                  name="Horaire"-->
+<!--                  action="action_modeles_horaire"-->
+<!--                  parent="menu_modeles"-->
+<!--                  sequence="127"/>-->
     </data>
 </openerp>
